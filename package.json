@@ -1,0 +1,27 @@
+{
+  "name": "atom-linter-escomplex",
+  "main": "./lib/atom-linter-escomplex",
+  "version": "0.0.1",
+  "description": "Complexity analysis of JavaScript abstract syntax trees",
+  "keywords": [
+    "lint"
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-linter-escomplex:toggle"
+  },
+  "repository": "https://github.com/antono/atom-linter-escomplex",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "escomplex": "^2.0.0-alpha"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  }
+}
